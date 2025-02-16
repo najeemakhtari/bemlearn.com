@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="../style/app.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon-min.png">
+
+
+</head>
+
+<body class="bg-[#0D1224] relative">
+<!---mobile nav----->
+<div id="mobile-nav" class="fixed w-full z-50 h-svh bg-slate-800 px-4 py-5 -left-full md:hidden transition-all duration-200">
+    <div class=" flex justify-end text-white absolute top-4 right-3">
+        <svg width="40px" id="close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          
+    </div>
+    <div class="flex items-center justify-center h-full">
+        <ul class="text-white font-thin text-3xl flex gap-7 flex-col items-center ">
+        <li class="flex items-center gap-4">
+            <a href='../'>Home</a>
+        </li>
+        <li class="flex items-center gap-4">
+            <a href='../roadmap/'>Roadmap</a>
+        </li>
+        <li class="flex items-center gap-4 font-medium">
+            <a href='../pricing/'>Pricing</a>
+        </li>
+        <li class="flex items-center gap-4">
+            <a href="../how-pay/">How to buy?</a>
+        </li>
+        <li class="flex items-center gap-4">
+            <a href='../contact/'>Contact</a>
+        </li>
+
+        </ul>
+    </div>
+     
+</div>
+    <!----header----->
+    <header class="w-full h-16">
+        <div class="container h-full mx-auto flex items-center justify-between px-4">
+                <a href="../"><img src="../images/logo.png" alt="bemlearn logo"
+                        class="mr-7 lg:mr-16 w-36 sm:w-44 "></a>
+            <!--members btn----->
+            <div class="hidden md:flex items-center hover:cursor-pointer">
+                <ul class="hidden md:flex items-center text-slate-400 gap-6 lg:gap-12">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../roadmap/">Roadmaps</a></li>
+                    <li><a href="../pricing/" class="text-white">Pricing</a></li>
+                    <li><a href="../how-pay/">How to buy?</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-white md:hidden">
+                <svg id="nav-btn" width="25px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    >
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+
+        </div>
+    </header>
+
+    <!---main----->
+    <main>
+        <div class="container mx-auto mt-14 px-4">
+            <h1 class="text-center text-white text-4xl font-bold">
+                bemLearn <span class="text-orange-500">pricing</span>
+            </h1>
+            <h2 class="text-center text-slate-300 font-thin pt-1 text-lg"><span class="text-red-500 font-medium">100$ off</span> for <span class="text-red-500 font-medium">first 100</span> student of this season</h2>
+            <svg class="text-slate-500 opacity-80 mx-auto mt-10 rotate-45" width="70" viewBox="0 0 98 129" fill="none">
+                <path
+                    d="M47.029 72.7354C50.0557 71.6329 52.8873 70.0549 55.4172 68.061C57.918 66.0579 60.1214 63.7096 61.9613 61.0864C63.8091 58.5597 65.3461 55.8197 66.5391 52.9257C67.7364 50.0386 68.4208 46.9647 68.5614 43.8423C68.6206 42.2624 68.4539 40.6823 68.0664 39.1495C67.6842 37.5558 66.9595 36.0643 65.9428 34.7789C64.7806 33.3631 63.1784 32.3767 61.3909 31.9766C59.5532 31.6118 57.6498 31.7712 55.8983 32.4365C55.0759 32.7319 54.2792 33.094 53.5159 33.5193C52.8228 33.9419 52.1521 34.4002 51.5067 34.8924C50.8464 35.3833 50.2154 35.9122 49.6168 36.4767L48.7047 37.3268L47.9174 38.176C45.9117 40.3826 44.1355 42.7873 42.6161 45.3531C41.0832 47.8361 39.9117 50.5248 39.1369 53.3382C38.4021 56.0043 38.062 58.7636 38.1276 61.5283L38.1352 62.5269L38.2181 63.5108C38.2949 64.1638 38.3506 64.8288 38.426 65.4547C38.6641 66.713 38.8388 68.0071 39.1613 69.2176C39.3611 69.9404 39.5715 70.6571 39.797 71.3514C39.1183 71.4567 38.4336 71.5514 37.7521 71.6025C35.0578 71.8377 32.3439 71.7042 29.6857 71.2059C27.1472 70.7067 24.7021 69.8151 22.4382 68.5631C18.1815 66.0403 14.5592 62.5759 11.8492 58.4358C9.29381 54.5665 7.28986 50.3601 5.89515 45.9379C4.59231 41.9013 3.61834 37.7659 2.98278 33.5722C2.37826 29.925 2.02126 26.2411 1.91425 22.5457C1.70973 17.104 2.3983 11.6657 3.9526 6.44679C5.16315 2.72557 6.29982 0.745502 6.07447 0.691869C5.84913 0.638235 5.6891 1.11877 5.13313 2.03216C4.35997 3.37851 3.68579 4.77932 3.11593 6.22352C1.15449 11.494 0.148942 17.0721 0.146538 22.6957C0.0827322 30.8741 1.20309 39.0187 3.47277 46.8761C4.84019 51.5314 6.86593 55.9674 9.48854 60.0495C12.359 64.5675 16.2315 68.3638 20.8056 71.144C23.3087 72.5646 26.0167 73.5892 28.8333 74.1813C31.7991 74.7897 34.8346 74.9853 37.8539 74.7626C38.8963 74.7008 39.9342 74.5788 40.9626 74.3974C42.0487 77.0395 43.365 79.5811 44.8961 81.9928C49.0382 88.373 54.1048 94.1027 59.9301 98.9944C64.1151 102.568 68.5796 105.8 73.2808 108.66C78.4719 111.87 83.9951 114.51 89.7538 116.532C90.4657 116.756 91.0559 116.938 91.5846 117.085L89.8096 117.517C87.9185 118.016 86.1129 118.591 84.4109 119.178C81.4044 120.241 78.4811 121.526 75.6654 123.024C70.8732 125.609 68.3039 127.814 68.5339 128.171C68.7639 128.529 71.7657 127.137 76.6077 125.207C79.0452 124.246 81.9645 123.152 85.2533 122.17C86.8948 121.673 88.6234 121.183 90.4314 120.76C91.3377 120.539 92.2605 120.324 93.2012 120.14C93.6785 120.024 94.0938 119.97 94.7849 119.788C95.6863 119.554 96.4869 119.033 97.0653 118.303C97.3671 117.906 97.5841 117.452 97.7028 116.967C97.7854 116.588 97.8184 116.199 97.8012 115.811C97.7666 115.238 97.6738 114.67 97.5245 114.115C97.2833 113.221 97.0481 112.337 96.8248 111.474C96.3407 109.756 95.8652 108.103 95.4151 106.519C94.4514 103.387 93.4861 100.645 92.63 98.3437C90.8863 93.7582 89.4203 90.9936 88.9623 91.169C88.5044 91.3445 89.0609 94.3727 90.2022 99.1736C90.8155 101.613 91.4858 104.423 92.2553 107.582L93.4801 112.53C93.6928 113.399 93.9055 114.268 94.1136 115.153L94.1554 115.227C93.4908 114.864 92.5499 114.408 91.1826 113.788C85.8335 111.319 80.6587 108.489 75.6942 105.317C71.2264 102.459 66.9737 99.2775 62.9701 95.7986C57.4752 91.1225 52.6808 85.6811 48.7339 79.6412C47.4482 77.6274 46.327 75.5132 45.3812 73.3191C45.9369 73.1441 46.4926 72.9692 47.0409 72.7565L47.029 72.7354ZM43.4862 67.8998C43.1601 66.8307 43.0267 65.7082 42.7956 64.5853C42.7124 64.0195 42.6833 63.4509 42.6107 62.8791L42.5228 62.0095L42.5221 61.1462C42.4528 58.7661 42.7319 56.3886 43.3504 54.0892C44.0065 51.6603 45.0047 49.337 46.315 47.1891C47.665 44.8794 49.2338 42.7048 50.9997 40.6951L51.6783 39.9492L52.3986 39.2772C52.8665 38.8172 53.3632 38.3874 53.8856 37.9904C54.3858 37.6017 54.9076 37.2415 55.4484 36.9115C55.9708 36.6141 56.5172 36.361 57.0819 36.1548C58.0155 35.7022 59.0732 35.5735 60.0881 35.7891C61.1029 36.0046 62.017 36.5521 62.6861 37.3451C64.0769 39.295 64.7488 41.6667 64.5873 44.0563C64.4873 46.7312 63.924 49.3685 62.9226 51.8509C61.88 54.4673 60.5227 56.9469 58.8806 59.2351C57.2951 61.5697 55.386 63.6671 53.2105 65.4645C51.0022 67.2219 48.5304 68.6198 45.8864 69.6068C45.3169 69.8314 44.7296 70.0243 44.1633 70.2053C43.902 69.4477 43.6558 68.6676 43.4234 67.8379"
+                    fill="currentColor"></path>
+            </svg>
+        </div>
+
+
+        <section class="w-full container mx-auto px-4 mt-10">
+            
+            
+
+            <div class="flex w-full mx-auto mt-6 lg:justify-between gap-8 sm:gap-3 justify-center flex-wrap">
+
+                <div
+                    class="w-full sm:w-3/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 lg:pb-0">
+                    
+                    <div class="absolute h-24 w-24 rounded-full bg-zinc-200 blur-[90px] left-[35%] -top-12"></div>
+                    <div class="w-full h-px gradient-silver opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">Silver</h3>
+                        <div class="text-zinc-200 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">549</span>449<span class="text-slate-500 text-sm font-medium">USDT</span></div>
+                            <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                            
+                    
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Instalment avaliable <sup>*</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Certificate<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>1 License<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340+ hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg width="11.121" height="11.121"
+                            viewBox="0 0 11.121 11.121">
+                            <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        </svg>
+                            <span class="line-through decoration-0">Real project team member</span>
+                        </p>
+                       
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Freelance project</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Business ideas</span>
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <video class="video" src="../videos/1-introduction.mp4" poster="../images/HTML.webp"></video>
+                    </div>
+                    <div class="w-full flex flex-col items-center pt-7">
+                        <a href="../payment/?plan=silver"
+                            class="text-white flex items-center justify-center text-sm gap-2 h-12 rounded-full w-44 button-gradient">
+                            Full payment
+                            <svg width="18" viewBox="0 0 23 16" fill="currentColor" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                                <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                                <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                            </svg>
+
+                        </a>
+                        <a href="../payment/?plan=silver&instalment=true" class="text-orange-500 font-light py-4 hover:underline hover:decoration-0 ">Instalment payment</a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full sm:w-3/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 lg:pb-0">
+                    <div
+                        class="w-56 h-9 bg-amber-500 absolute -rotate-45 -left-14 flex items-center font-mono font-bold text-white">
+                        <span class="text-sm pl-14">Mostly</span>
+                    </div>
+                    <div class="absolute h-24 w-24 rounded-full bg-amber-500 blur-[90px] left-[35%] -top-12"></div>
+
+                    <div class="w-full h-px gradient-gold opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">Gold</h3>
+                        <div class="text-amber-500 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">649</span>549<span class="text-slate-500 text-sm font-medium">USDT</span></div>
+                        <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Instalment avaliable<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Certificate<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>1 License<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340+ hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Real project team member</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Freelance projects</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Business ideas</span>
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <video class="video" src="../videos/1-introduction.mp4" poster="../images/css.webp"></video>
+                    </div>
+                    <div class="w-full flex flex-col items-center pt-7">
+                        <a href="../payment/?plan=gold"
+                        class="text-white flex items-center justify-center text-sm gap-2 h-12 rounded-full w-44 button-gradient">
+                        Full payment
+                        <svg width="18" viewBox="0 0 23 16" fill="currentColor" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                            <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                            <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                        </svg>
+
+                    </a>
+                    <a href="../payment/?plan=gold&instalment=true" class="text-orange-500 font-light py-4 hover:underline hover:decoration-0 ">Instalment payment</a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full sm:w-3/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 ">
+                    <div class="absolute h-24 w-24 rounded-full bg-rose-500 blur-[90px] left-[35%] -top-12"></div>
+                    <div class="w-full h-px gradient5 opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">Daimond</h3>
+                        <div class="text-rose-500 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">749</span>649<span class="font-medium text-slate-500 text-sm">USDT</span></div>
+                        <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Instalment avaliable<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Certificate<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>2 License<sup> *</sup></span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340+ hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Real project team member</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Freelance project</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Business ideas</span>
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <video class="video" src="../videos/1-introduction.mp4" poster="../images/git.webp"></video>
+                    </div>
+                    <div class="w-full flex flex-col items-center pt-7">
+                        <a href="../payment/?plan=diamond"
+                        class="text-white flex items-center justify-center text-sm gap-2 h-12 rounded-full w-44 button-gradient">
+                        Full payment
+                        <svg width="18" viewBox="0 0 23 16" fill="currentColor" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                            <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                            <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                        </svg>
+
+                    </a>
+                    <a href="../payment/?plan=diamond&instalment=true" class="text-orange-500 font-light py-4 hover:underline hover:decoration-0 ">Instalment payment</a>
+                    </div>
+                </div>
+                
+            </div>
+          <p class="text-slate-400 font-light text-sm pt-4 pb-2">* If you pay the full price, you'll access the complete roadmap. With the installment option, you'll access half of the roadmap now and the rest after your second payment</p>
+          <p class="text-slate-400 font-light text-sm pb-2">* With instalment payment you will get 50$ off on each plan, but with full payment you will get 100$ off on each plan</p>
+          <p class="text-slate-400 font-light text-sm pb-2">* If you complete all roadmap you can request for a full-stack web developer certificate</p>
+          <p class="text-slate-400 font-light text-sm pb-2">* You will receive 1 license in Silver and Gold plan, you can use that license in one computer, in Diamond plan you receive 2 license.</p>
+       
+        </section>
+
+
+        <!-----FAQs-->
+    <section>
+        <div class="container mx-auto mt-36 my-72 px-4">
+            <h2 class="text-center text-white text-3xl font-bold">
+                 <span class="text-orange-500">FAQs</span><span> about pricing</span>
+            </h2>
+            <span class="block text-center pt-1 text-slate-400 font-thin text-sm">Most asked questions</span>
+            <svg class="text-slate-500 opacity-80 mx-auto mt-4 rotate-45" width="50" viewBox="0 0 98 129" fill="none">
+                <path
+                    d="M47.029 72.7354C50.0557 71.6329 52.8873 70.0549 55.4172 68.061C57.918 66.0579 60.1214 63.7096 61.9613 61.0864C63.8091 58.5597 65.3461 55.8197 66.5391 52.9257C67.7364 50.0386 68.4208 46.9647 68.5614 43.8423C68.6206 42.2624 68.4539 40.6823 68.0664 39.1495C67.6842 37.5558 66.9595 36.0643 65.9428 34.7789C64.7806 33.3631 63.1784 32.3767 61.3909 31.9766C59.5532 31.6118 57.6498 31.7712 55.8983 32.4365C55.0759 32.7319 54.2792 33.094 53.5159 33.5193C52.8228 33.9419 52.1521 34.4002 51.5067 34.8924C50.8464 35.3833 50.2154 35.9122 49.6168 36.4767L48.7047 37.3268L47.9174 38.176C45.9117 40.3826 44.1355 42.7873 42.6161 45.3531C41.0832 47.8361 39.9117 50.5248 39.1369 53.3382C38.4021 56.0043 38.062 58.7636 38.1276 61.5283L38.1352 62.5269L38.2181 63.5108C38.2949 64.1638 38.3506 64.8288 38.426 65.4547C38.6641 66.713 38.8388 68.0071 39.1613 69.2176C39.3611 69.9404 39.5715 70.6571 39.797 71.3514C39.1183 71.4567 38.4336 71.5514 37.7521 71.6025C35.0578 71.8377 32.3439 71.7042 29.6857 71.2059C27.1472 70.7067 24.7021 69.8151 22.4382 68.5631C18.1815 66.0403 14.5592 62.5759 11.8492 58.4358C9.29381 54.5665 7.28986 50.3601 5.89515 45.9379C4.59231 41.9013 3.61834 37.7659 2.98278 33.5722C2.37826 29.925 2.02126 26.2411 1.91425 22.5457C1.70973 17.104 2.3983 11.6657 3.9526 6.44679C5.16315 2.72557 6.29982 0.745502 6.07447 0.691869C5.84913 0.638235 5.6891 1.11877 5.13313 2.03216C4.35997 3.37851 3.68579 4.77932 3.11593 6.22352C1.15449 11.494 0.148942 17.0721 0.146538 22.6957C0.0827322 30.8741 1.20309 39.0187 3.47277 46.8761C4.84019 51.5314 6.86593 55.9674 9.48854 60.0495C12.359 64.5675 16.2315 68.3638 20.8056 71.144C23.3087 72.5646 26.0167 73.5892 28.8333 74.1813C31.7991 74.7897 34.8346 74.9853 37.8539 74.7626C38.8963 74.7008 39.9342 74.5788 40.9626 74.3974C42.0487 77.0395 43.365 79.5811 44.8961 81.9928C49.0382 88.373 54.1048 94.1027 59.9301 98.9944C64.1151 102.568 68.5796 105.8 73.2808 108.66C78.4719 111.87 83.9951 114.51 89.7538 116.532C90.4657 116.756 91.0559 116.938 91.5846 117.085L89.8096 117.517C87.9185 118.016 86.1129 118.591 84.4109 119.178C81.4044 120.241 78.4811 121.526 75.6654 123.024C70.8732 125.609 68.3039 127.814 68.5339 128.171C68.7639 128.529 71.7657 127.137 76.6077 125.207C79.0452 124.246 81.9645 123.152 85.2533 122.17C86.8948 121.673 88.6234 121.183 90.4314 120.76C91.3377 120.539 92.2605 120.324 93.2012 120.14C93.6785 120.024 94.0938 119.97 94.7849 119.788C95.6863 119.554 96.4869 119.033 97.0653 118.303C97.3671 117.906 97.5841 117.452 97.7028 116.967C97.7854 116.588 97.8184 116.199 97.8012 115.811C97.7666 115.238 97.6738 114.67 97.5245 114.115C97.2833 113.221 97.0481 112.337 96.8248 111.474C96.3407 109.756 95.8652 108.103 95.4151 106.519C94.4514 103.387 93.4861 100.645 92.63 98.3437C90.8863 93.7582 89.4203 90.9936 88.9623 91.169C88.5044 91.3445 89.0609 94.3727 90.2022 99.1736C90.8155 101.613 91.4858 104.423 92.2553 107.582L93.4801 112.53C93.6928 113.399 93.9055 114.268 94.1136 115.153L94.1554 115.227C93.4908 114.864 92.5499 114.408 91.1826 113.788C85.8335 111.319 80.6587 108.489 75.6942 105.317C71.2264 102.459 66.9737 99.2775 62.9701 95.7986C57.4752 91.1225 52.6808 85.6811 48.7339 79.6412C47.4482 77.6274 46.327 75.5132 45.3812 73.3191C45.9369 73.1441 46.4926 72.9692 47.0409 72.7565L47.029 72.7354ZM43.4862 67.8998C43.1601 66.8307 43.0267 65.7082 42.7956 64.5853C42.7124 64.0195 42.6833 63.4509 42.6107 62.8791L42.5228 62.0095L42.5221 61.1462C42.4528 58.7661 42.7319 56.3886 43.3504 54.0892C44.0065 51.6603 45.0047 49.337 46.315 47.1891C47.665 44.8794 49.2338 42.7048 50.9997 40.6951L51.6783 39.9492L52.3986 39.2772C52.8665 38.8172 53.3632 38.3874 53.8856 37.9904C54.3858 37.6017 54.9076 37.2415 55.4484 36.9115C55.9708 36.6141 56.5172 36.361 57.0819 36.1548C58.0155 35.7022 59.0732 35.5735 60.0881 35.7891C61.1029 36.0046 62.017 36.5521 62.6861 37.3451C64.0769 39.295 64.7488 41.6667 64.5873 44.0563C64.4873 46.7312 63.924 49.3685 62.9226 51.8509C61.88 54.4673 60.5227 56.9469 58.8806 59.2351C57.2951 61.5697 55.386 63.6671 53.2105 65.4645C51.0022 67.2219 48.5304 68.6198 45.8864 69.6068C45.3169 69.8314 44.7296 70.0243 44.1633 70.2053C43.902 69.4477 43.6558 68.6676 43.4234 67.8379"
+                    fill="currentColor"></path>
+            </svg>
+
+
+
+
+
+        <div class="w-full sm:w-3/4 mx-auto mt-8">
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>Can I have a consultation before buying the course?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        Sure, you can contact with our support and have free consultation and ask any question that you have about our course, You can find our contact details in <a href="./contact.html" target="_blank" class="italic underline"> contact us</a> page
+                    </div>
+                </div>
+            </div>
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What will happen when I purchase a plan?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        Once your purchase done and you confirm your payment, bemLearn support will contact you with whatsapp you given to us, they will ask you for some detail about the computer or laptop you use, after that our support will send you bemLearn player file - a license number and a video that how you can install our player and use license on it to activate your course and start you learning, this all will take around 5 minutes.
+                    </div>
+                </div>
+            </div>
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is instalment?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        Studetns can pay course price in 2 instalment, with this method student has access to half of the full contents of the course and after paying the second installment, student can have full access to all the contents
+                    </div>
+                </div>
+            </div>
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>How can I get a certificate?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        Every student can achieve a full-stack web developer certificate
+                    </div>
+                </div>
+            </div>
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is license?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        When students purchase our course, they will receive a unique license number. This license can only be activated on a single computer, ensuring that the course materials remain secure and cannot be copied, In Silver and Gold plan you will receive one license but in Diamond plan you can receive 2 license.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>Can I access to to updates?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end rotate">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500 text-lg">
+                        Sure, all members have lifetime access to updates
+                    </div>
+                </div>
+            </div>
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is course duration support?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        Frontend roadmap takes around 8 months time to learn and practice, we support you from any question and any coding challenge in this way, so you can learn with confidence
+                    </div>
+                </div>
+            </div>
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is real project member?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        In bemLearn we work on many real world projects, in some cases we use our students to be a part of developers on that project, it means you will work in real project and it will be great practice for you to experince a real team project and you can use this for your future carrier.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accardion-item my-4 h-16 overflow-hidden"> 
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is VIP channel?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        In our channel, we share valuable tips for every step of full-stack development, drawing from the extensive experience of our instructors. You'll discover insightful ideas for starting your own business, tackling freelance projects, and much more. Our content is designed to elevate your learning experience and help you succeed in your career journey.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is extra 2 years support?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        When your course duration finish, if you have Gold or Diamond membership 2 years more support will be actived for you, in this time we support you from any frontend challenges.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>Contact with instructor?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        If you are a member of Gold or Diamond, you will have direct contact with Mr.Naji Mohammad "Senior frontend developer & META certified professional forntend developer" the instructor of frontend roadmap, you can consult with him in your course duration and get more benifits from his experinces.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>Freelance job, What is this?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        We will help you to prepare yourself to get freelance projects, will help you to make a nice and acceptable linkedin account, github account and make your portfolio in a high level that every employer wants to hire you for its project, all will done if you be a member of Gold or Diamond plans.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>Will bemLearn find job for me?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        Yes, if you are a member of Gold or Diamond then you will mentoring to be job ready after you course duration ends, you should know that Mr.Naji Mohammadi have 3 companies in (Oman, Iran, Germany), all companies working in startups industry and each of them have many running startups, these companies always need developers, so this is our ambition to have our country employers than any other nation.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>What is business ideas?</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        Busienss ideas are the best for you if you are trying to have your own business no matter where do you live, every corner of world needs improvments, if you think that you can run a business we will give you ideas even we will give you professional employers to start your busniess as soon as possible, In Afghanistan there is lots of opportunities that each of this opportunity will make you a successful person.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accardion-item my-4 h-16 overflow-hidden">
+                <div class="w-full min-h-16 bg-slate-800  hover:bg-slate-700  rounded-xl flex items-center justify-between px-4 text-lg text-slate-400 font-thin hover:cursor-pointer">
+                    <span>My question is not in the list!</span>
+                    <svg  width="25" viewBox="0 0 23 16" fill="currentColor" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                        <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                        <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                    </svg>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-[95%] bg-slate-800 min-h-12 mt-2 rounded-xl px-4 py-3 text-orange-500">
+                        If you still have question, feel free to contact with our support, you can check our contact page to find how you can contact with us.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+
+
+        </div>
+    </section>
+       
+    
+    </main>
+
+    <!----footer-->
+    <footer class="w-full border-t border-[#1F223C] mt-20">
+        <div
+            class="container mx-auto px-4 text-white flex flex-col sm:flex-row items-center justify-between min-h-24 py-3 sm:py-0 relative overflow-hidden">
+            <div
+                class="w-28 h-28 md:w-40 md:h-40 rounded-full bg-orange-500 absolute blur-[100px] opacity-70 left-[42%] -top-16 md:-top-36">
+            </div>
+            <div>
+                <p class="text-xs font-thin">Copyrights bemLearn &copy</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#">
+                    <svg width="16.002" height="16.002" viewBox="0 0 16.002 16.002">
+                        <path id="Path_63" data-name="Path 63"
+                            d="M16,8.049A8,8,0,1,0,6.748,16V10.376H4.718V8.05H6.75V6.275A2.832,2.832,0,0,1,9.772,3.144a12.237,12.237,0,0,1,1.791.157v1.98H10.554a1.16,1.16,0,0,0-1.3,1.258v1.51h2.218l-.354,2.326H9.25V16A8.037,8.037,0,0,0,16,8.049Z"
+                            transform="translate(0.002 0.001)" fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_64" data-name="Path 64"
+                            d="M0,1.146A1.161,1.161,0,0,1,1.175,0h13.65A1.161,1.161,0,0,1,16,1.146V14.854A1.161,1.161,0,0,1,14.825,16H1.175A1.161,1.161,0,0,1,0,14.854ZM4.943,13.394V6.169h-2.4v7.225Zm-1.2-8.212a1.252,1.252,0,1,0,.016-2.5,1.251,1.251,0,1,0-.032,2.5Zm4.908,8.212V9.359a1.63,1.63,0,0,1,.08-.586,1.313,1.313,0,0,1,1.232-.878c.869,0,1.216.662,1.216,1.634v3.865h2.4V9.25C13.58,7.03,12.4,6,10.816,6A2.386,2.386,0,0,0,8.651,7.191v.025H8.635l.016-.025V6.169h-2.4c.03.678,0,7.225,0,7.225Z"
+                            fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_65" data-name="Path 65"
+                            d="M8,0C5.829,0,5.556.01,4.7.048A5.9,5.9,0,0,0,2.76.42a3.917,3.917,0,0,0-1.417.923A3.927,3.927,0,0,0,.42,2.76,5.86,5.86,0,0,0,.048,4.7C.01,5.555,0,5.827,0,8s.01,2.444.048,3.3A5.894,5.894,0,0,0,.42,13.24a4.1,4.1,0,0,0,2.339,2.34,5.873,5.873,0,0,0,1.942.372C5.555,15.99,5.827,16,8,16s2.444-.01,3.3-.048a5.906,5.906,0,0,0,1.943-.372,4.1,4.1,0,0,0,2.339-2.34,5.92,5.92,0,0,0,.372-1.942C15.99,10.445,16,10.173,16,8s-.01-2.445-.048-3.3A5.913,5.913,0,0,0,15.58,2.76a3.926,3.926,0,0,0-.923-1.417A3.911,3.911,0,0,0,13.24.42,5.885,5.885,0,0,0,11.3.048C10.443.01,10.172,0,8,0H8ZM7.283,1.442H8c2.136,0,2.389.007,3.232.046a4.433,4.433,0,0,1,1.486.275,2.482,2.482,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.394,4.394,0,0,1,.275,1.485c.039.843.047,1.1.047,3.231s-.008,2.389-.047,3.232a4.426,4.426,0,0,1-.275,1.485,2.652,2.652,0,0,1-1.519,1.517,4.4,4.4,0,0,1-1.485.276c-.843.038-1.1.047-3.232.047s-2.39-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.478,2.478,0,0,1-.92-.6,2.48,2.48,0,0,1-.6-.92,4.42,4.42,0,0,1-.275-1.485c-.038-.843-.046-1.1-.046-3.233s.008-2.388.046-3.231a4.426,4.426,0,0,1,.276-1.486,2.482,2.482,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.738-.034,1.024-.044,2.515-.045v0ZM12.271,2.77a.96.96,0,1,0,.96.96.96.96,0,0,0-.96-.96ZM8,3.892A4.109,4.109,0,1,0,12.11,8,4.108,4.108,0,0,0,8,3.892ZM8,5.333A2.667,2.667,0,1,1,5.334,8,2.667,2.667,0,0,1,8,5.333Z"
+                            fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                        <path id="Path_66" data-name="Path 66"
+                            d="M9,0h1.98a6.3,6.3,0,0,0,1.235,2.512A3.449,3.449,0,0,0,15,4V6a5.319,5.319,0,0,1-4-1.829V11A5,5,0,1,1,6,6V8a3,3,0,1,0,3,3Z"
+                            transform="translate(-1)" fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="text-xs font-thin">
+                <a href="#" class="mr-3">Privacy policy</a>
+                <a href="#">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+<script src="../js/share.js"></script>
+<script src="./js/pricing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Withdraw</title>
+    <link rel="stylesheet" href="../../style/app.css">
+
+
+
+
+</head>
+
+<body class="bg-slate-800 relative">
+    <div class="lg:hidden w-full absolute px-6 py-4 flex items-center justify-between ">
+        <img src="../../images/logo.png" width="170px">
+        <svg id="mobile-nav-btn" width="30px" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+
+    <div id="desktop-nav" class="w-2/4  absolute top-0 -left-full transition-all duration-300">
+        <div class="h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" class="w-32">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 sm:text-lg ">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white ">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="./">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affliate marketers
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-full flex">
+
+        <!----desktop nav----->
+
+        <div class=" hidden lg:block  w-72 h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" width="70%">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 text-lg">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../product/">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affiliate marketers
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-----content body-->
+        <div class="content-body w-full px-3">
+            <h2 class="text-white text-5xl font-bold mt-24">Withdraw history</h2>
+            <p  class=" text-lg  text-slate-300 font-thin mt-4">Waiting for payment: <span id="waiting"> 0</span></p>
+            <p  class=" text-lg  text-slate-300 font-thin mb-4">Total Paid: <span id="paid"> 500</span></p>
+            <div class="hidden md:flex items-center justify-between  bg-orange-500 py-4 px-3 rounded-xl text-center">
+                <div class="w-[20%]">Withdraw reciver</div>
+                <div class="w-[20%]">Amount</div>
+                <div class="w-[20%]">Transaction Date</div>
+                <div class="w-[20%]">Transaction status</div>
+                <div class="w-[20%]">Transaction detail</div>
+            </div>
+            <div>
+                <div class="bg-slate-300 rounded-xl  py-6 px-3 my-1 ">
+                    <div
+                        class=" flex flex-col sm:flex-row items-center justify-between  text-center text-sm">
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">Ahmadi</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">50</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">13/10/2024</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%] text-green-600 font-bold">
+                            Success</div>
+                        <span class="w-full withdraw-item sm:w-[20%] bg-sky-400  hover:cursor-pointer  rounded-lg py-3">Detail</span>
+                    </div>
+                    <div id="orders-wrapper" class="hidden border-t border-slate-400 mt-4 py-3 flex flex-col gap-3 font-bold text-sm">
+                        <p>Withdraw ID: <span class="pl-2 font-light">122324</span> </p>
+                        <p>Marketer name: <span class="pl-2 font-light">Karimi</span> </p>
+                        <p>Request date: <span class="pl-2 font-light">20/12/2024 - 12:00</span> </p>
+                        <p>Transfer date: <span class="pl-2 font-light">20/12/2024 - 13:00</span> </p>
+                        <p>Status: <span class="pl-2 font-bold text-green-600">Success</span> </p>
+                        <p>Reciver wallet: <span class="pl-2 font-light">TG6jUMfwpwR9QNFsSwCGtLaV2TR2gV8yru</span> </p>
+                        <p>Amount: <span class="pl-2 font-light">50</span> </p>
+                        <p>Transaction detail: <button class="bg-orange-500 px-2 py-1 rounded-md font-normal">Click here</button> </p>
+                        
+                    </div>
+                </div>
+
+
+                <div class="bg-slate-300 rounded-xl  py-6 px-3 my-1 ">
+                    <div
+                        class=" flex flex-col sm:flex-row items-center justify-between  text-center text-sm">
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">Najib sidiqi</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">50</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%]">13/10/2024</div>
+                        <div class="w-full h-7 flex justify-center items-center sm:w-[20%] text-yellow-600 font-bold">
+                            Waiting</div>
+                        <span class="w-full withdraw-item sm:w-[20%] hover:cursor-pointer  bg-sky-400 rounded-lg py-3">Detail</span>
+                    </div>
+                    <div class="hidden border-t border-slate-400 mt-4 py-3 flex flex-col gap-3 font-bold text-sm">
+                        <p>Withdraw ID: <span class="pl-2 font-light">122324</span> </p>
+                        <p>Marketer name: <span class="pl-2 font-light">Najib sidiqi</span> </p>
+                        <p>Request date: <span class="pl-2 font-light">20/12/2024 - 12:00</span> </p>
+                        <p>Transfer date: <span class="pl-2 font-light">N/A</span> </p>
+                        <p>Status: <span class="pl-2 font-bold text-yellow-600">Waiting</span> </p>
+                        <p>Reciver wallet: <span class="pl-2 font-light">TG6jUMfwpwR9QNFsSwCGtLaV2TR2gV8yru</span> </p>
+                        <p>Amount: <span class="pl-2 font-light">50</span> </p>
+                        <p>Transaction detail: <input type="text" class="ml-2 w-44 h-7 rounded-md"> <button class="bg-orange-500 px-2 py-1 rounded-md font-normal">Submit</button> </p>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="./js/withdraw.js"></script>
+    <script src="./js/orders.js"></script>
+    <script src="../js/share.js"></script>
+</body>
+
+</html>

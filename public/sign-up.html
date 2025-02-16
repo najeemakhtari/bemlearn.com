@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with bemLearn</title>
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/izitoast.css">
+    <link rel="icon" type="image/png" href="./images/favicon-min.png">
+   </head>
+
+<body class="bg-[#0D1224] flex items-center justify-center h-lvh">
+        <div class="px-4 w-full sm:w-[400px]  min-h-18">
+            <div class="w-full flex justify-center mb-6">
+               <a href="./index.html"><img src="./images/logo.png" alt="bemlearn logo"  class="w-44"/></a> 
+            </div>
+            <div class="h-full w-full border border-[#1F223C] bg-[#12172A] px-4 py-3 rounded-lg">
+                <h4 class="text-center font-bold text-2xl mt-3 text-white ">Create account</h4>
+
+                <!----name---->
+                <div class="w-full h-14 mt-6 relative">
+                    <input id="name" type="text" placeholder="Enter full name" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-thin focus:border-slate-700 " autocomplete="off"/>
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600">
+                        <svg width="20px" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle> <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    </span>
+                </div>
+                <span id="name-error" class="hidden font-thin text-xs text-red-500 my-1.5 flex items-center gap-1">
+                    <svg width="15px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                     <span id="name-error-msg"></span>
+                </span>
+               
+                <!----Email---->
+                <div class="w-full h-14 mt-2 relative">
+                    <input id="email" type="text" placeholder="Enter email address" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-thin focus:border-slate-700 "/>
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600">
+                        <svg width="20px" viewBox="-0.5 0 25 25" fill="none" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.2091 5.41992C15.5991 16.0599 8.39906 16.0499 2.78906 5.41992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1.99023 7.39001V17.39C1.99023 18.4509 2.41166 19.4682 3.1618 20.2184C3.91195 20.9685 4.92937 21.39 5.99023 21.39H17.9902C19.0511 21.39 20.0685 20.9685 20.8186 20.2184C21.5688 19.4682 21.9902 18.4509 21.9902 17.39V7.39001C21.9902 6.32915 21.5688 5.31167 20.8186 4.56152C20.0685 3.81138 19.0511 3.39001 17.9902 3.39001H5.99023C4.92937 3.39001 3.91195 3.81138 3.1618 4.56152C2.41166 5.31167 1.99023 6.32915 1.99023 7.39001Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> </span>
+                </div>
+                <span id="email-error" class="hidden font-thin text-xs text-red-500 my-1.5 flex items-center gap-1">
+                    <svg width="15px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                     <span id="email-error-msg"></span>
+                </span>
+             
+
+                <!--phone---->
+                <div class="w-full h-14 mt-2 relative">
+                    <input id="phone" type="text" placeholder="Enter whatsapp number" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-thin focus:border-slate-700 "/>
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600">
+                        <svg width="25px" viewBox="0 0 24 24" fill="none"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z" fill="currentColor"></path> </g></svg>
+                </div>
+                <span id="phone-error" class="hidden font-thin text-xs text-red-500 my-1.5 flex items-center gap-1">
+                    <svg width="15px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    <span id="phone-error-msg"></span>
+                </span>
+               
+
+                <!----password---->
+                <div class="w-full h-14 mt-2 relative">
+                    <input id="password" type="password" placeholder="Enter password" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-black focus:border-slate-700 "/>
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600 hover:cursor-pointer">
+                        <svg id="password-show" class="hidden" width="20px" viewBox="0 0 24 24" fill="none"><g  stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1 12C1 12 5 20 12 20C19 20 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></circle> </g></svg>
+                        <svg id="password-hide" width="20px" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 14.8335C21.3082 13.3317 22 12 22 12C22 12 18.3636 5 12 5C11.6588 5 11.3254 5.02013 11 5.05822C10.6578 5.09828 10.3244 5.15822 10 5.23552M12 9C12.3506 9 12.6872 9.06015 13 9.17071C13.8524 9.47199 14.528 10.1476 14.8293 11C14.9398 11.3128 15 11.6494 15 12M3 3L21 21M12 15C11.6494 15 11.3128 14.9398 11 14.8293C10.1476 14.528 9.47198 13.8524 9.1707 13C9.11386 12.8392 9.07034 12.6721 9.04147 12.5M4.14701 9C3.83877 9.34451 3.56234 9.68241 3.31864 10C2.45286 11.1282 2 12 2 12C2 12 5.63636 19 12 19C12.3412 19 12.6746 18.9799 13 18.9418" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </span>
+                </div>
+                <span id="password-error" class="hidden font-thin text-xs text-red-500 mt-1.5 flex items-center gap-1">
+                    <svg width="15px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                     <span id="password-error-msg"></span>
+                </span>
+                
+                <!----confirm password--->
+                <div class="w-full h-14 mt-2 relative">
+                    <input id="confirm-pass" type="password" placeholder="Confirm password" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-black focus:border-slate-700 "/>
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600 hover:cursor-pointer">
+                        <svg id="confirm-show" class="hidden" width="20px" viewBox="0 0 24 24" fill="none"><g  stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1 12C1 12 5 20 12 20C19 20 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></circle> </g></svg>
+                        <svg id="confirm-hide" width="20px" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 14.8335C21.3082 13.3317 22 12 22 12C22 12 18.3636 5 12 5C11.6588 5 11.3254 5.02013 11 5.05822C10.6578 5.09828 10.3244 5.15822 10 5.23552M12 9C12.3506 9 12.6872 9.06015 13 9.17071C13.8524 9.47199 14.528 10.1476 14.8293 11C14.9398 11.3128 15 11.6494 15 12M3 3L21 21M12 15C11.6494 15 11.3128 14.9398 11 14.8293C10.1476 14.528 9.47198 13.8524 9.1707 13C9.11386 12.8392 9.07034 12.6721 9.04147 12.5M4.14701 9C3.83877 9.34451 3.56234 9.68241 3.31864 10C2.45286 11.1282 2 12 2 12C2 12 5.63636 19 12 19C12.3412 19 12.6746 18.9799 13 18.9418" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </span>
+                </div>
+                <span id="confirm-error" class="hidden font-thin text-xs text-red-500 mt-1.5 flex items-center gap-1">
+                    <svg width="15px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    <span id="confirm-error-msg"></span>
+                </span>                
+                <button id="register" class="w-full h-11 bg-orange-600 text-white text-lg rounded-lg font-thin mt-5 mb-3 flex items-center justify-center">Register</button>
+                <div class="text-slate-500 font-thin text-center py-1">Already have account? <a href="./login.html" class="text-orange-500 font-medium"> Login</a></div>
+            </div>
+            <div class="text-slate-500 font-thin mt-2 text-xs text-center py-1">Register to bemLearn means you accept <a href="./login.html" class="text-sky-500"> terms of use</a></div>
+           
+        </div>
+    
+    <script src="./js/izitoast.js"></script>
+     <script src="./js/signup.js" type="module"></script>
+</body>
+
+</html>

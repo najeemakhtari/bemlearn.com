@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with bemLearn</title>
+    <link rel="stylesheet" href="../../style/app.css">
+
+
+
+
+</head>
+
+<body class="bg-slate-800 relative">
+    <div class="lg:hidden w-full absolute px-6 py-4 flex items-center justify-between ">
+        <img src="../../images/logo.png" width="170px">
+        <svg id="mobile-nav-btn" width="30px" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+
+    <div id="desktop-nav" class="w-2/4  absolute top-0 -left-full transition-all duration-300">
+        <div class="h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" class="w-32">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 sm:text-lg ">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-white ">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../product/">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affiliate marketers
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!----desktop nav----->
+
+    <div class="w-full flex">
+        <div class=" hidden lg:block  w-72 h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" width="70%">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 text-lg">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../product/">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affliate marketers
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-body w-full px-3">
+            <h2 class="text-white text-5xl font-bold mt-24 ml-6">Orders</h2>
+
+            <div class="hidden md:flex items-center justify-between mt-10 bg-orange-500 py-4 px-3 rounded-xl text-center">
+                <div class="w-[14%]">Order ID</div>
+                <div class="w-[14%]">Name</div>
+                <div class="w-[14%]">Phone</div>
+                <div class="w-[14%]">Course</div>
+                <div class="w-[14%]">Amount paid</div>
+                <div class="w-[14%]">Transaction link</div>
+                <div class="w-[14%]">Refer by</div>
+            </div>
+            <div>
+                <img id="loading-order" src="../../images/loading.svg" class="m-auto mt-7" width="60px">
+                <h4 id="no-order" class="text-center pt-7 text-xl text-white "></h4>
+                <div id="orders-wrapper" class="hidden flex-col sm:flex-row items-center justify-between my-6 md:my-1 bg-slate-300 py-6 px-3 rounded-xl text-center text-sm">
+                
+                </div>
+               
+            </div>
+
+          
+
+        </div>
+    </div>
+
+    <script src="../js/share.js"></script>
+    <script src="./js/order.js" type="module"></script>
+</body>
+
+</html>

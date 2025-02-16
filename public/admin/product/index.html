@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../../style/app.css">
+    <link rel="stylesheet" href="../../style/izitoast.css">
+
+
+
+</head>
+
+<body class="bg-slate-800 relative">
+    <div class="lg:hidden w-full absolute px-6 py-4 flex items-center justify-between ">
+        <img src="../../images/logo.png" width="170px">
+        <svg id="mobile-nav-btn" width="30px" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+
+    <div id="desktop-nav" class="w-2/4  absolute top-0 -left-full transition-all duration-300">
+        <div class="h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" class="w-32">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 sm:text-lg ">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white ">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        <a href="./">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affliate marketers
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-full flex">
+
+    <!----desktop nav----->
+
+        <div class=" hidden lg:block  w-72 h-svh bg-[#0D1224] ">
+            <div class="flex justify-center pt-6 ">
+                <img src="../../images/logo.png" width="70%">
+            </div>
+            <div>
+                <ul class="mt-10 ml-5 flex flex-col gap-5 text-lg">
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../order/">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        <a href="../product/">
+                            Products
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../affiliate/">
+                            Affiliate marketers
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../withdraw">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li class="text-slate-400 hover:text-white">
+                        <a href="../admins/">
+                            Admins
+                        </a>
+                    </li>
+                    <li class="text-red-600 ">
+                        <a href="#">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-----content body-->
+        <div class="content-body w-full px-3">
+            <h2 class="text-white text-5xl font-bold mt-24 ml-6">Products</h2>
+            <button id="add" class="py-3 px-4 bg-orange-500 text-white rounded-lg mt-8 mb-4">Add product</button>
+            <div id="add-form" class="flex flex-col gap-2 mb-8 hidden">
+                <input id="name" type="text" class="w-52 rounded-sm h-10 px-2" placeholder="Product name">
+                <input id="actual-price" type="text" class="w-52 rounded-sm h-10 px-2" placeholder="Actual price">
+                <input id="sell-price" type="text" class="w-52 rounded-sm h-10 px-2" placeholder="Sell price">
+                <input id="video-link" type="text" class="w-52 rounded-sm h-10 px-2" placeholder="video link">
+                <textarea id="detail" placeholder="Detail" class="w-52 h-40"></textarea>
+                <button id="submit" class="py-3 w-52 px-4 bg-orange-500 text-white rounded-lg">Submit</button>
+            </div>
+            <div class="hidden md:flex items-center justify-between bg-orange-500 py-4 px-3 rounded-xl text-center">
+                <div class="w-[14%]">Product ID</div>
+                <div class="w-[14%]">Name</div>
+                <div class="w-[14%]">Total students</div>
+                <div class="w-[14%]">Actual price</div>
+                <div class="w-[14%]">Sell price</div>
+                <div class="w-[14%]">Detail</div>
+                <div class="w-[14%]">Edit</div>
+            </div>
+            <div id="products" >
+                <img src="../../images/loading.svg" width="60px" class="m-auto mt-6" id="loading">
+              
+            </div>
+
+          
+
+        </div>
+    </div>
+    <script src="../../js/izitoast.js"></script>
+    <script src="./js/product.js" type="module"></script>
+    <script src="../js/share.js"></script>
+</body>
+
+</html>

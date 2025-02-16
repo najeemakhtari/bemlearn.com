@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Web developer | bemLearn</title>
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="./images/favicon-min.png">
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    </style>
+</head>
+
+<body class="bg-[#0D1224] relative">
+    <!--mobile nav-->
+    <div id="mobile-nav" class="fixed w-full z-50 h-svh bg-slate-800 px-4 py-5 -left-full md:hidden transition-all duration-200">
+        <div class=" flex justify-end text-white absolute top-4 right-3">
+            <svg width="40px" id="close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              
+        </div>
+        <div class="flex items-center justify-center h-full">
+            <ul class="text-white font-thin text-3xl flex gap-7 flex-col items-center ">
+            <li class="flex items-center gap-4 font-medium">
+                <a href='./'>Home</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <a href='./roadmap/'>Roadmap</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <a href='./pricing/'>Pricing</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <a href="./how-pay/l">How to buy?</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <a href='./contact/'>Contact</a>
+            </li>
+
+            </ul>
+        </div>
+         
+    </div>
+    <div
+        class="hidden md:block absolute w-96 h-96 rounded-full bg-orange-500 left-[35%] blur-[200px] opacity-50 -top-80 -z-50">
+    </div>
+    <!----header----->
+    <header class="w-full h-16">
+        <div class="container h-full mx-auto flex items-center justify-between px-4">
+                <a href="./index.html"><img src="./images/logo.png" alt="bemlearn logo"
+                        class="mr-7 lg:mr-16 w-36 sm:w-44 "></a>
+            <!--members btn----->
+            <div class="hidden md:flex items-center hover:cursor-pointer">
+                <ul class="hidden md:flex items-center text-slate-400 gap-6 lg:gap-12">
+                    <li><a href="./" class="text-white">Home</a></li>
+                    <li><a href="./roadmap/">Roadmaps</a></li>
+                    <li><a href="./pricing/">Pricing</a></li>
+                    <li><a href="./how-pay/">How to buy?</a></li>
+                    <li><a href="./contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-white md:hidden">
+                <svg id="nav-btn" width="25px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    >
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="w-full pt-12">
+        <!----landing section-->
+        <section class="container mx-auto flex flex-col md:flex-row items-center px-4 w-full">
+            <div class="w-full md:w-2/4 mb-24 md:mb-0">
+                <h2 class="text-white font-bold text-4xl lg:text-[3rem] text-center md:text-start leading-[3rem]">
+                    Become a<span class="text-rose-500"> Full-Stack</span><br>
+                    developer with <br><span class="text-orange-500">bemLearn</span>
+                    
+                </h2>
+                <p class="text-xl text-white mt-7 text-center md:text-start "><span
+                        class="text-[#9B9FA9] font-thin">The</span> roadmap <span class="text-[#9B9FA9] font-thin">you
+                        need to</span> become professional</p>
+                <h1 class="text-xs italic text-white mb-7 opacity-80 mt-1 text-center md:text-start "> First <span
+                        class="text-[#9B9FA9] font-thin"><strong>online
+                            programming courses in</span> Afghanistan</strong></h1>
+                <div class="w-ful flex justify-center md:justify-start">
+                    <a href="roadmap.html"
+                        class="text-white flex items-center justify-center text-sm gap-3 h-11 font-medium rounded-full w-56 button-gradient">
+                        Roadmap
+                        <svg width="20" viewBox="0 0 23 16" fill="currentColor" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5c4084810099bb103d" aria-disabled="false">
+                            <path opacity="0.4" d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863" fill="currentColor"></path>
+                            <path d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292" fill="currentColor"></path>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/4">
+                <div class="bg-transparent w-full h-[450px] rounded-md overflow-hidden  border border-[#1F223C]">
+                    <div class="w-full h-px gradient opacity-80"></div>
+                    <div class="w-full h-14 rounded-t-md bg-[#12172A]">
+                        <div class="h-full flex items-center gap-2 ml-4">
+                            <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-orange-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                    </div>
+                    <div class="w-full h-full  bg-[#12172A] mt-0.5 font-mono p-5 lg:p-8 text-white">
+                        <code>
+                            <div class="flex items-center gap-2">
+                                <span class="text-rose-500">const</span>
+                                <span>webDeveloper</span>
+                                <span class="text-rose-500">=</span>
+                                <span class="text-slate-500">{</span>
+                                <span class="w-1 h-5 bg-slate-50 inline-block animate-pulse"></span>
+                            </div>
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10 mt-3">
+                                <span>name:</span>
+                                <span class="text-orange-300"><span class="text-slate-500">'</span>A programmer<span class="text-slate-500">'</span></span>
+                                <span class="text-slate-500">,</span>
+
+                            </div>
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10">
+                                <span>skills:</span>
+                                <span class="text-orange-300">
+                                    <span class="text-slate-500">[</span><span class="text-slate-500">'</span>React<span class="text-slate-500">,</span> Node<span class="text-slate-500">'</span><span class="text-slate-500">]</span>
+                                </span>
+                                <span class="text-slate-500">,</span>
+
+                            </div>
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10">
+                                <span class="text-white">hardWorker:</span>
+                                <span class="text-sky-300">true</span>
+                                <span class="text-slate-500">,</span>
+                            </div>
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10">
+                                <span class="text-white">debugger:</span>
+                                <span class="text-sky-300">true</span>
+                                <span class="text-slate-500">,</span>
+                            </div>
+                           
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10">
+                                <span class="text-white">certificate:</span>
+                                <span class="text-orange-300"><span class="text-slate-500">'</span>IBM Certified<span class="text-slate-500">'</span></span>
+                                <span class="text-slate-500">,</span>
+                            </div>
+                            <div class="flex items-center gap-2 ml-5 lg:ml-10">
+                                <span class="text-white">becomeSuccessful:</span>
+                                <span class="text-slate-500">()=> </span><span class="text-slate-500">{</span>
+                            </div>
+                            <div class="flex items-center gap-2 ml-8 lg:ml-14">
+                                <span class="text-rose-500">if<span class="text-slate-500">(</span><span class="text-white">hardWorker </span><span class="text-orange-500">&& </span><span class="text-white">debugger </span><span class="text-slate-500">)</span><span class="text-slate-500">{</span></span>  
+                            </div>
+                            <div class="flex items-center gap-2 ml-14 lg:ml-20">
+                                <span class="text-rose-500">return <span class="text-sky-300">true</span></span>
+
+                            </div>
+                            <div class="flex items-center gap-2 ml-8 lg:ml-14">
+                                <span class="text-slate-500">}<span class="text-rose-500">else</span><span class="text-slate-500"> { </span></span>
+                            </div>
+                            <div class="flex items-center gap-2 ml-14 lg:ml-20">
+                                <span class="text-rose-500">return <span class="text-sky-300">false</span></span>
+
+                            </div>
+                            <div class="flex items-center gap-2 ml-8 lg:ml-14">
+                                <span class="text-slate-500">}</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-slate-500">}</span>
+                            </div>
+                           </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--about me-->
+        <section class="container mx-auto px-4 w-full mt-44 mb-32">
+            <div class="flex flex-col  items-center text-white text-center">
+                <h4 class="text-sm text-orange-500">SALAM ALIKUM,</h4>
+                <h2 class="text-3xl font-bold pt-1 pb-2">I am Naji Mohammadi</h2>
+                <p class="font-thin text-slate-300 w-full md:w-2/4 text-center">
+                    Are you feeling stuck or overwhelmed in your coding journey? Don’t worry, I’ve got your back!
+                    Together, we’ll work to level up your skills, increase your earning potential, and build a brighter
+                    future.
+                </p>
+            </div>
+            <div class="mx-auto mt-10 w-full lg:w-2/4 rounded-lg border border-[#1F223C]">
+                <video src="./videos/1-introduction.mp4" class="w-full rounded-lg" poster="./images/HTML.webp"
+                    preload="none" controls></video>
+            </div>
+            <div class="w-full mx-auto mt-20 flex gap-5 justify-center flex-wrap">
+                <div class="w-52 h-36 border border-[#1F223C] rounded-lg">
+                    <div class="w-full h-px gradient5 opacity-70"></div>
+                    <div class="flex flex-col items-center justify-center h-full gap-2 bg-[#11152C]">
+                        <h3 class="text-4xl text-rose-500 font-bold">400+</h3>
+                        <h3 class="text-slate-200 text-sm">Happy students</h3>
+                    </div>
+                </div>
+                <div class="w-52 h-36 border border-[#1F223C] rounded-lg">
+                    <div class="w-full h-px gradient3 opacity-70"></div>
+                    <div class="flex flex-col items-center justify-center h-full gap-2 bg-[#11152C]">
+                        <h3 class="text-4xl text-sky-500 font-bold">8+</h3>
+                        <h3 class="text-slate-200 text-sm">Years of experince</h3>
+                    </div>
+                </div>
+                <div class="w-52 h-36 border border-[#1F223C] rounded-lg">
+                    <div class="w-full h-px gradient4 opacity-70"></div>
+                    <div class="flex flex-col items-center justify-center h-full gap-2 bg-[#11152C]">
+                        <h3 class="text-4xl text-emerald-400 font-bold">340+</h3>
+                        <h3 class="text-slate-200 text-sm">Hours of courses</h3>
+                    </div>
+                </div>
+                <div class="w-52 h-36 border border-[#1F223C] rounded-lg">
+                    <div class="w-full h-px gradient2 opacity-70"></div>
+                    <div class="flex flex-col items-center justify-center h-full gap-2 bg-[#11152C]">
+                        <h3 class="text-4xl text-orange-500 font-bold">1</h3>
+                        <h3 class="text-slate-200 text-sm">Course roadmap</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--why learn with me?-->
+        <section class="w-full border-t border-[#1F223C]  relative overflow-hidden">
+            <div
+                class="w-28 h-28 md:w-40 md:h-40 rounded-full bg-orange-500 absolute blur-[100px] opacity-70 left-[45%] -top-16 md:-top-36">
+            </div>
+            <div class="container mx-auto w-full px-4">
+
+                <div class="text-center py-8">
+                    <h6 class="text-sm text-orange-500">FEATURES</h6>
+                    <h4 class="text-white text-3xl font-bold">Why learn with me?</h4>
+                </div>
+
+                <div class="w-full lg:w-9/12 mx-auto">
+                    <div class="flex gap-8 xl:gap-20 my-14 sm:my-24 flex-col sm:flex-row items-center sm:items-start">
+                        <div
+                            class="w-full sm:w-2/4 flex flex-col items-center text-center sm:text-start sm:items-start">
+                            <div
+                                class="rounded-full w-10 h-10 bg-orange-500 bg-opacity-20 flex items-center justify-center text-orange-500">
+                                <svg width="20" viewBox="0 0 25 25">
+                                    <path id="Path_8" data-name="Path 8"
+                                        d="M76.5,64A12.5,12.5,0,1,0,89,76.5,12.5,12.5,0,0,0,76.5,64Zm4.925,16.342-.8,1.088a.223.223,0,0,1-.312.047L75.7,78.113a.221.221,0,0,1-.092-.181V70.25a.224.224,0,0,1,.223-.223h1.342a.224.224,0,0,1,.223.223v6.906l3.979,2.877a.22.22,0,0,1,.05.31Z"
+                                        transform="translate(-64 -64)" fill="currentColor" stroke="#000"
+                                        stroke-width="0" />
+                                </svg>
+                            </div>
+                            <h6 class="text-orange-500 mt-1">No waste of time - Fast learning</h6>
+                            <h2 class="text-white text-3xl font-bold mb-4 mt-1">No fluff, just the good stuff!</h2>
+                            <p class="text-lg text-slate-300 font-thin">
+                                I don’t want to waste your time with boring stuff you don’t need. So I’ve made sure my
+                                courses are clear, concise, to the point, and free of technical jargon. No rambling or
+                                repetition, just the essentials you need to succeed, explained in plain English.
+                            </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./images/landingImg1.png" class="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex gap-8 xl:gap-20 my-14 sm:my-24 flex-col-reverse sm:flex-row items-center sm:items-start">
+                        <div class="w-2/4 flex items-center">
+                            <img src="./images/landing.webp" class="">
+                        </div>
+                        <div
+                            class="w-full sm:w-2/4 flex flex-col items-center text-center sm:text-start sm:items-start">
+                            <div
+                                class="rounded-full w-10 h-10 bg-purple-500 bg-opacity-20 flex items-center justify-center text-purple-500">
+                                <svg width="16" height="14" viewBox="0 0 16 14">
+                                    <path id="Path_9" data-name="Path 9"
+                                        d="M2.5,3.5a.5.5,0,0,1,0-1h11a.5.5,0,0,1,0,1Zm2-2a.5.5,0,0,1,0-1h7a.5.5,0,0,1,0,1ZM0,13a1.5,1.5,0,0,0,1.5,1.5h13A1.5,1.5,0,0,0,16,13V6a1.5,1.5,0,0,0-1.5-1.5H1.5A1.5,1.5,0,0,0,0,6ZM6.258,6.563a.5.5,0,0,1,.507.013l4,2.5a.5.5,0,0,1,0,.848l-4,2.5A.5.5,0,0,1,6,12V7a.5.5,0,0,1,.258-.437Z"
+                                        transform="translate(0 -0.5)" fill="currentColor" stroke="#000"
+                                        stroke-width="0" />
+                                </svg>
+
+                            </div>
+                            <h6 class="text-purple-500 mt-1">Step-by-step lessons</h6>
+                            <h2 class="text-white text-3xl font-bold mb-4 mt-1">Easy to follow lessons</h2>
+                            <p class="text-lg text-slate-300 font-thin">
+                                I know learning to code can be tough. So I’ve carefully organized my courses into
+                                simple, bite-sized pieces to help you progress smoothly, one step at a time. I’ll guide
+                                you through each step of the way so you won’t feel overwhelmed.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex gap-8 xl:gap-20 my-14 sm:my-24 flex-col sm:flex-row items-center sm:items-start">
+                        <div
+                            class="w-full sm:w-2/4 flex flex-col items-center text-center sm:text-start sm:items-start">
+                            <div
+                                class="rounded-full w-10 h-10 bg-orange-500 bg-opacity-20 flex items-center justify-center text-orange-500">
+                                <svg width="20"  viewBox="0 0 25 25">
+                                    <path id="Path_10" data-name="Path 10"
+                                        d="M24.789,5.329a.585.585,0,0,0-.982-.269L20.176,8.69l-3.314-.552-.552-3.314L19.94,1.193a.587.587,0,0,0-.276-.984,7,7,0,0,0-8.332,9.04L.913,19.667a3.125,3.125,0,0,0,4.419,4.419L15.742,13.676a7.008,7.008,0,0,0,9.047-8.347ZM3.123,23.048a1.172,1.172,0,1,1,1.172-1.172A1.172,1.172,0,0,1,3.123,23.048Z"
+                                        transform="translate(0.003 -0.001)" fill="currentColor" stroke="#000"
+                                        stroke-width="0" />
+                                </svg>
+
+
+
+                            </div>
+                            <h6 class="text-orange-500 mt-1">From beginner to pro</h6>
+                            <h2 class="text-white text-3xl font-bold mb-4 mt-1">Courses for everyone</h2>
+                            <p class="text-lg text-slate-300 font-thin">
+                                Whether you’re looking to learn a new language or just brushing up on your skills, I’ve
+                                got you covered. I offer a wide variety of courses so you can pick and choose what’s
+                                most relevant to you. Plus, I make sure my courses are fun and engaging so you won’t get
+                                bored.
+                            </p>
+                        </div>
+                        <div class="w-2/4 flex items-center">
+                            <img src="./images/landingImg5.png" class="">
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="flex gap-8 xl:gap-20 my-14 sm:my-24  flex-col-reverse sm:flex-row items-center sm:items-start">
+                        <div class="w-2/4 flex items-center">
+                            <img src="./images/landingImg4.png" class="">
+                        </div>
+                        <div
+                            class="w-full sm:w-2/4 flex flex-col items-center text-center sm:text-start sm:items-start">
+                            <div
+                                class="rounded-full w-10 h-10 bg-sky-500 bg-opacity-20 flex items-center justify-center text-sky-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="Path_11" data-name="Path 11"
+                                        d="M0,8a8,8,0,1,1,8,8A8,8,0,0,1,0,8ZM7.5,1.077A3.519,3.519,0,0,0,5.613,2.932,7.97,7.97,0,0,0,5.145,4H7.5V1.077ZM4.09,4a9.267,9.267,0,0,1,.64-1.539,6.7,6.7,0,0,1,.6-.933A7.025,7.025,0,0,0,2.255,4ZM3.508,7.5A13.7,13.7,0,0,1,3.82,5H1.674a6.958,6.958,0,0,0-.656,2.5h2.49ZM4.847,5a12.5,12.5,0,0,0-.338,2.5H7.5V5ZM8.5,5V7.5h2.99A12.5,12.5,0,0,0,11.153,5ZM4.51,8.5A12.5,12.5,0,0,0,4.847,11H7.5V8.5Zm3.99,0V11h2.653a12.454,12.454,0,0,0,.338-2.5ZM5.145,12a7.964,7.964,0,0,0,.468,1.068A3.525,3.525,0,0,0,7.5,14.923V12Zm.182,2.472a6.7,6.7,0,0,1-.6-.933A9.268,9.268,0,0,1,4.09,12H2.255a7.024,7.024,0,0,0,3.072,2.472ZM3.82,11a13.652,13.652,0,0,1-.312-2.5H1.018A6.926,6.926,0,0,0,1.674,11Zm6.853,3.472A7.024,7.024,0,0,0,13.745,12H11.91a9.27,9.27,0,0,1-.64,1.539,6.688,6.688,0,0,1-.6.933ZM8.5,12v2.923a3.519,3.519,0,0,0,1.887-1.855A7.964,7.964,0,0,0,10.855,12H8.5Zm3.68-1h2.146a6.926,6.926,0,0,0,.656-2.5h-2.49A13.65,13.65,0,0,1,12.18,11Zm2.8-3.5A6.959,6.959,0,0,0,14.326,5H12.18a13.7,13.7,0,0,1,.312,2.5ZM11.27,2.461A9.255,9.255,0,0,1,11.91,4h1.835a7.024,7.024,0,0,0-3.072-2.472,6.788,6.788,0,0,1,.6.933ZM10.855,4a7.966,7.966,0,0,0-.468-1.068A3.522,3.522,0,0,0,8.5,1.077V4Z"
+                                        fill="currentColor" stroke="#000" stroke-width="0" />
+                                </svg>
+
+
+                            </div>
+                            <h6 class="text-sky-500 mt-1">Get ready for the job</h6>
+                            <h2 class="text-white text-3xl font-bold mb-4 mt-1">Real-world projects</h2>
+                            <p class="text-lg text-slate-300 font-thin">
+                                My courses are designed to prepare you for real-world jobs and interviews. With
+                                in-depth, comprehensive courses packed with real-world examples and exercises, you’ll be
+                                ready to take on any challenge that comes your way.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!----roadmaps---->
+        <section class="w-full container mx-auto px-4 my-10">
+            <div class="text-center py-8">
+                <h6 class="text-orange-500">Roadmaps</h6>
+                <h4 class="text-white text-3xl font-bold">The roadmap you need</h4>
+            </div>
+            <!--roadmap card-->
+            <div
+                class="w-10/12 mx-auto bg-[#171c36] border border-[#1E2138] rounded-t-3xl rounded-b-xl mb-20 md:mb-7 mt-8">
+                <div
+                    class="flex flex-col-reverse md:flex-row gap-5 md:gap-0 w-full p-5 bg-[#11152C] border border-[#1E2138] rounded-2xl">
+                    <div class="w-full md:w-3/4 flex flex-col justify-center">
+                        <h2 class="text-white text-xl font-bold text-center md:text-start">Full-Stack developer Roadmap</h2>
+                        <p class="text-slate-300 font-thin text-sm w-full md:w-4/5 py-2 text-center md:text-start">I’ve
+                            taught millions of people how to code and
+                            become professional software engineers through my YouTube channel and online courses. I’m
+                            humbled and thrilled to be a part of their programming journeys! When channel and online
+                            courses. I’m humbled and thrilled to be a part of their programming journeys! When…</p>
+
+                        <div class="w-full flex justify-center md:justify-start my-2">
+                            <a href="#"
+                                class="text-white flex items-center justify-center text-sm gap-3 h-9 rounded-full w-44 button-gradient">
+                                More info
+                                <svg width="13.086" height="11.085" viewBox="0 0 13.086 11.085">
+                                    <path id="Path_7" data-name="Path 7"
+                                        d="M9.444,3.9a.5.5,0,0,1,.711,0l5.033,5.033a.5.5,0,0,1,0,.711l-5.033,5.033a.5.5,0,1,1-.711-.711L13.619,9.79H2.753a.5.5,0,1,1,0-1.007H13.619L9.444,4.609a.5.5,0,0,1,0-.711Z"
+                                        transform="translate(-2.25 -3.751)" fill="#fff" fill-rule="evenodd" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 flex items-center justify-center -mt-14 md:mt-0">
+                        <img src="./images/frontend-development.png">
+                    </div>
+                </div>
+                
+            </div>
+
+       
+
+
+
+
+
+        </section>
+
+        <!-----prices------>
+
+        <section class="w-full container mx-auto px-4 mt-48">
+            
+            <div class="text-center py-8">
+                <h6 class="text-orange-500">Pricing</h6>
+                <h4 class="text-white text-3xl font-bold">Become a student of bemLearn</h4>
+                <p class="text-slate-400 font-thin text-xl mt-2">
+                   <span class="text-red-500 font-medium">100$ off</span> for first <span class="text-red-500 font-medium">100 first</span>  studetns
+                </p>
+            </div>
+
+            <div class="flex sm:w-4/5 mx-auto mt-6 lg:justify-between gap-3 justify-center flex-wrap">
+
+                <div
+                    class="w-full md:w-2/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 lg:pb0">
+                    <div class="absolute h-24 w-24 rounded-full bg-orange-500 blur-[90px] left-[35%] -top-12"></div>
+                    <div class="w-full h-px gradient2 opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">VENUS</h3>
+                        <div class="text-orange-500 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">$390</span>$290</div>
+                        <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340 hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Freelance project</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Business ideas</span>
+                        </p>
+                    </div>
+                    <div class="w-full flex flex-col gap-3 items-center justify-center pt-5">
+                        <a href="#"
+                            class="text-white flex items-center justify-center text-sm gap-3 h-9 rounded-full w-44 button-gradient">
+                            Enroll now
+                            <svg width="13.086" height="11.085" viewBox="0 0 13.086 11.085">
+                                <path id="Path_7" data-name="Path 7"
+                                    d="M9.444,3.9a.5.5,0,0,1,.711,0l5.033,5.033a.5.5,0,0,1,0,.711l-5.033,5.033a.5.5,0,1,1-.711-.711L13.619,9.79H2.753a.5.5,0,1,1,0-1.007H13.619L9.444,4.609a.5.5,0,0,1,0-.711Z"
+                                    transform="translate(-2.25 -3.751)" fill="#fff" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+                        <a href="pricing.html" class="font-thin text-sky-500 hover:underline decoration-0">More info</a>
+                    
+                    </div>
+                </div>
+
+                <div
+                    class="w-full md:w-2/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 lg:pb0">
+                    <div
+                        class="w-56 h-9 bg-sky-500 absolute -rotate-45 -left-14 flex items-center font-mono font-bold text-white">
+                        <span class="text-sm pl-14">Mostly</span>
+                    </div>
+                    <div class="absolute h-24 w-24 rounded-full bg-sky-500 blur-[90px] left-[35%] -top-12"></div>
+
+                    <div class="w-full h-px gradient3 opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">URANUS</h3>
+                        <div class="text-sky-500 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">$490</span>$390</div>
+                        <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340 hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Freelance projects</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.121" height="11.121"
+                                viewBox="0 0 11.121 11.121">
+                                <path id="Path_69" data-name="Path 69" d="M6,15l9-9M6,6l9,9"
+                                    transform="translate(-4.939 -4.939)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                            <span class="line-through decoration-0">Business ideas</span>
+                        </p>
+                    </div>
+                    <div class="w-full flex items-center flex-col gap-3 justify-center pt-5">
+                        <a href="#"
+                            class="text-white flex items-center justify-center text-sm gap-3 h-9 rounded-full w-44 button-gradient">
+                            Enroll now
+                            <svg width="13.086" height="11.085" viewBox="0 0 13.086 11.085">
+                                <path id="Path_7" data-name="Path 7"
+                                    d="M9.444,3.9a.5.5,0,0,1,.711,0l5.033,5.033a.5.5,0,0,1,0,.711l-5.033,5.033a.5.5,0,1,1-.711-.711L13.619,9.79H2.753a.5.5,0,1,1,0-1.007H13.619L9.444,4.609a.5.5,0,0,1,0-.711Z"
+                                    transform="translate(-2.25 -3.751)" fill="#fff" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+                        <a href="pricing.html" class="font-thin text-sky-500 hover:underline decoration-0">More info</a>
+                    
+                    </div>
+                </div>
+
+                <div
+                    class="w-full md:w-2/4 lg:w-[32%] min-h-[465px] bg-[#12172A] border border-[#1F223C] rounded-md relative overflow-hidden pb-4 lg:pb0">
+                    <div class="absolute h-24 w-24 rounded-full bg-rose-500 blur-[90px] left-[35%] -top-12"></div>
+                    <div class="w-full h-px gradient5 opacity-70"></div>
+                    <div class="px-3 py-4 text-center">
+                        <h3 class="text-white text-xl font-bold">JUPITER</h3>
+                        <div class="text-rose-500 font-bold text-4xl pt-2"><span
+                                class="text-2xl line-through opacity-40">$590</span>$490</div>
+                        <h6 class="text-white text-sm font-thin">Full roadmap</h6>
+                    </div>
+
+                    <div class="text-white font-thin text-lg px-10 pt-2">
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Full roadmap</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>340 hours videos</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Lifetime access</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Access to updates</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Support in course duration</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>2 years more support</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>VIP channel</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Contact with instructor</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Freelance project</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Find job</span>
+                        </p>
+                        <p class="flex items-center gap-2 py-px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.5" viewBox="0 0 11 8.5">
+                                <path id="Path_40" data-name="Path 40"
+                                    d="M12.736,3.97a.733.733,0,0,1,1.047,0,.755.755,0,0,1,.01,1.05L7.88,12.01a.733.733,0,0,1-1.065.02l-3.6-3.646a.757.757,0,0,1,0-1.06.733.733,0,0,1,1.047,0l3.052,3.093,5.4-6.425.02-.022Z"
+                                    transform="translate(-3.001 -3.75)" fill="#fff" stroke="#fff" stroke-width="0" />
+                            </svg>
+                            <span>Business ideas</span>
+                        </p>
+                    </div>                 <div class="w-full flex flex-col items-center gap-3 justify-center pt-5">
+                        <a href="#"
+                            class="text-white flex items-center justify-center text-sm gap-3 h-9 rounded-full w-44 button-gradient">
+                            Enroll now
+                            <svg width="13.086" height="11.085" viewBox="0 0 13.086 11.085">
+                                <path id="Path_7" data-name="Path 7"
+                                    d="M9.444,3.9a.5.5,0,0,1,.711,0l5.033,5.033a.5.5,0,0,1,0,.711l-5.033,5.033a.5.5,0,1,1-.711-.711L13.619,9.79H2.753a.5.5,0,1,1,0-1.007H13.619L9.444,4.609a.5.5,0,0,1,0-.711Z"
+                                    transform="translate(-2.25 -3.751)" fill="#fff" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+                        <a href="pricing.html" class="font-thin text-sky-500 hover:underline decoration-0">More info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----comments---->
+        <section class="w-full container mx-auto px-4 mt-48">
+            <div class="text-center py-8">
+                <h6 class="text-orange-500">Comments</h6>
+                <h4 class="text-white text-3xl font-bold">What my students say ?</h4>
+            </div>
+
+            <div class="w-4/5 min-h-24 mx-auto overflow-hidden flex items-center flex-col md:flex-row">
+                <div class="w-full md:w-[35%] bg-[#12172A] border-[#1F223C] border rounded-xl  md:mr-4 px-4 py-5">
+
+                    <span class="flex gap-1 items-center">
+                        <svg width="15px" viewBox="0 0 47.94 47.94" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#ED8A19;"
+                                    d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg width="15px" viewBox="0 0 47.94 47.94" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#ED8A19;"
+                                    d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg width="15px" viewBox="0 0 47.94 47.94" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#ED8A19;"
+                                    d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg width="15px" viewBox="0 0 47.94 47.94" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#ED8A19;"
+                                    d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg width="15px" viewBox="0 0 47.94 47.94" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#ED8A19;"
+                                    d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="text-white text-sm"> <span class="font-bold">4.9</span><span
+                                class="font-thin text-slate-400"> out of </span><span class="font-bold">5</span></span>
+                    </span>
+                    <span class="text-white text-sm"> <span class="font-thin text-slate-400">based on</span><span
+                            class="font-bold"> 340 </span><span class="font-thin text-slate-400"> comments</span></span>
+                    <div class="border-t border-slate-800 mt-3">
+                        <p class="text-slate-300 font-thin py-2">
+                            At bemLearn, we prioritize providing the best support to our students at every step. With
+                            over 340 happy students and counting, we are committed to helping them from the start of
+                            their journey until they secure their first project or job.</p>
+                    </div>
+                    <div class="w-[60%] lg:w-[35%] mx-auto my-2 pt-4">
+
+                        <div class="swiper-wrapper">
+                            <svg class="swiper-button-prev text-white text-dark-550" width="23" height="16"
+                                viewBox="0 0 23 16" fill="#fff">
+                                <path opacity="0.4"
+                                    d="M16.5073 6.34863L21.0752 5.94466C22.1003 5.94466 22.9315 6.7839 22.9315 7.81901C22.9315 8.85412 22.1003 9.69336 21.0752 9.69336L16.5073 9.28938C15.7031 9.28938 15.0511 8.63105 15.0511 7.81901C15.0511 7.00561 15.7031 6.34863 16.5073 6.34863"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M1.16786 6.42292C1.23926 6.35083 1.50598 6.04614 1.75653 5.79314C3.21811 4.20852 7.03437 1.61734 9.03073 0.824345C9.33382 0.697847 10.1003 0.428528 10.5112 0.409485C10.9032 0.409485 11.2776 0.500618 11.6346 0.680164C12.0805 0.931801 12.4361 1.32898 12.6328 1.79689C12.7581 2.12061 12.9548 3.09315 12.9548 3.11084C13.1501 4.17315 13.2565 5.9006 13.2565 7.81032C13.2565 9.62754 13.1501 11.2843 12.9898 12.3643C12.9723 12.3833 12.7756 13.5898 12.5614 14.0033C12.1694 14.7596 11.4029 15.2275 10.5826 15.2275H10.5112C9.97638 15.2098 8.85292 14.7405 8.85292 14.7242C6.96297 13.9312 3.23697 11.4652 1.73902 9.82613C1.73902 9.82613 1.31604 9.40447 1.13284 9.14195C0.84726 8.76381 0.70447 8.29591 0.70447 7.828C0.70447 7.30568 0.864772 6.82009 1.16786 6.42292"
+                                    fill="#fff"></path>
+                            </svg>
+                            <svg class="swiper-button-next text-white text-dark-550" width="23" height="16"
+                                viewBox="0 0 23 16" fill="none">
+                                <path opacity="0.4"
+                                    d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292"
+                                    fill="#fff"></path>
+                            </svg>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full md:w-[65%]">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-[#12172A] py-4 px-5 rounded-md">
+                                <p class="text-white text-center font-thin text-sm">
+                                    “I started learning programming w/ Mosh 4 years ago with his C# courses. Thanks to
+                                    those I landed my first job. Then, I continued to learn from his materials and made
+                                    the jump from junior to senior Software Engineer (my salary went 10x from my first
+                                    job). Now, 4 years later I continue to learn with his excellent courses.”
+                                </p>
+                                <div class="w-2/5 h-1 opacity-70 bg-orange-500 my-4 rounded-lg"></div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center border border-[#1F223C]">
+                                        <svg width="20px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #64748b;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M116.738,231.551c0,23.245,14.15,43.315,34.513,49.107c15.262,42.368,55.574,70.776,100.582,70.776 s85.32-28.408,100.58-70.776c20.365-5.792,34.515-25.854,34.515-49.107c0-15.691-6.734-30.652-18.061-40.248l1.661-8.921 c0-3.323-0.229-6.568-0.491-9.821l-0.212-2.593l-2.213,1.374c-30.871,19.146-80.885,27.71-116.754,27.71 c-34.85,0-83.895-8.214-114.902-26.568l-2.259-0.59l-0.188,2.554c-0.192,2.632-0.384,5.256-0.357,8.23l1.632,8.649 C123.466,200.923,116.738,215.876,116.738,231.551z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M356.151,381.077c-9.635-5.97-18.734-11.607-26.102-17.43l-0.937-0.738l-0.972,0.691 c-6.887,4.914-31.204,30.17-51.023,51.172l-10.945-21.273l5.697-4.076v-20.854h-40.07v20.854l5.697,4.076l-10.949,21.281 c-19.825-21.009-44.154-46.265-51.034-51.18l-0.973-0.691l-0.937,0.738c-7.368,5.823-16.469,11.46-26.102,17.43 c-30.029,18.61-64.062,39.697-64.062,77.344c0,22.244,52.241,53.579,168.388,53.579c116.146,0,168.388-31.335,168.388-53.579 C420.213,420.774,386.178,399.687,356.151,381.077z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M131.67,131.824c0,18.649,56.118,42.306,119.188,42.306s119.188-23.656,119.188-42.306v-25.706l43.503-17.702 v55.962c-5.068,0.792-8.964,5.186-8.964,10.45c0,4.503,2.966,8.432,7.242,9.852l-8.653,57.111h40.704l-8.651-57.111 c4.27-1.421,7.232-5.35,7.232-9.852c0-5.295-3.919-9.697-9.014-10.466l-0.21-67.197c0.357-0.621,0.357-1.266,0.357-1.607 c0-0.342,0-0.978-0.149-0.978h-0.002c-0.262-2.446-2.011-4.612-4.56-5.652l-11.526-4.72L267.551,3.238 C262.361,1.118,256.59,0,250.858,0s-11.502,1.118-16.69,3.238L72.834,68.936c-2.863,1.172-4.713,3.773-4.713,6.622 c0,2.842,1.848,5.443,4.716,6.63l58.833,23.928V131.824z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col ml-2 gap-1">
+                                        <span class="text-xs text-slate-400">Mohammad Karim "Afghan"</span>
+                                        <span class="flex gap-1">
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-[#12172A] py-4 px-5 rounded-md">
+                                <p class="text-white text-center font-thin text-sm">
+                                    من از رشته کمپیوتر ساینس فارغ التحصیل شدیم و زمانیکه اخرین سمستر بودم با استاد آشنا
+                                    شدم و درس را شروع کردم، واقعا بسیار کمکم کردن اینقدر که حتی در دانشگاه هیچ کسی
+                                    مطالبی را که من بلد بودم بلد نبودن حتی بعضی از استاد های ما،حالا در یک شرکت خارجی
+                                    ریموت کار میکنم و تلاش دارم تا بیشتر و بیشتر علم خود را بالا ببرم. تشکر از استاد
+                                </p>
+                                <div class="w-2/5 h-1 opacity-70 bg-orange-500 my-4 rounded-lg"></div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center border border-[#1F223C]">
+                                        <svg width="20px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #64748b;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M116.738,231.551c0,23.245,14.15,43.315,34.513,49.107c15.262,42.368,55.574,70.776,100.582,70.776 s85.32-28.408,100.58-70.776c20.365-5.792,34.515-25.854,34.515-49.107c0-15.691-6.734-30.652-18.061-40.248l1.661-8.921 c0-3.323-0.229-6.568-0.491-9.821l-0.212-2.593l-2.213,1.374c-30.871,19.146-80.885,27.71-116.754,27.71 c-34.85,0-83.895-8.214-114.902-26.568l-2.259-0.59l-0.188,2.554c-0.192,2.632-0.384,5.256-0.357,8.23l1.632,8.649 C123.466,200.923,116.738,215.876,116.738,231.551z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M356.151,381.077c-9.635-5.97-18.734-11.607-26.102-17.43l-0.937-0.738l-0.972,0.691 c-6.887,4.914-31.204,30.17-51.023,51.172l-10.945-21.273l5.697-4.076v-20.854h-40.07v20.854l5.697,4.076l-10.949,21.281 c-19.825-21.009-44.154-46.265-51.034-51.18l-0.973-0.691l-0.937,0.738c-7.368,5.823-16.469,11.46-26.102,17.43 c-30.029,18.61-64.062,39.697-64.062,77.344c0,22.244,52.241,53.579,168.388,53.579c116.146,0,168.388-31.335,168.388-53.579 C420.213,420.774,386.178,399.687,356.151,381.077z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M131.67,131.824c0,18.649,56.118,42.306,119.188,42.306s119.188-23.656,119.188-42.306v-25.706l43.503-17.702 v55.962c-5.068,0.792-8.964,5.186-8.964,10.45c0,4.503,2.966,8.432,7.242,9.852l-8.653,57.111h40.704l-8.651-57.111 c4.27-1.421,7.232-5.35,7.232-9.852c0-5.295-3.919-9.697-9.014-10.466l-0.21-67.197c0.357-0.621,0.357-1.266,0.357-1.607 c0-0.342,0-0.978-0.149-0.978h-0.002c-0.262-2.446-2.011-4.612-4.56-5.652l-11.526-4.72L267.551,3.238 C262.361,1.118,256.59,0,250.858,0s-11.502,1.118-16.69,3.238L72.834,68.936c-2.863,1.172-4.713,3.773-4.713,6.622 c0,2.842,1.848,5.443,4.716,6.63l58.833,23.928V131.824z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col ml-2 gap-1">
+                                        <span class="text-xs text-slate-400">Maryam "Naderi"</span>
+                                        <span class="flex gap-1">
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-[#12172A] py-4 px-5 rounded-md">
+                                <p class="text-white text-center font-thin text-sm">
+                                    “I started learning programming w/ Mosh 4 years ago with his C# courses. Thanks to
+                                    those I landed my first job. Then, I continued to learn from his materials and made
+                                    the jump from junior to senior Software Engineer (my salary went 10x from my first
+                                    job). Now, 4 years later I continue to learn with his excellent courses.”
+                                </p>
+                                <div class="w-2/5 h-1 opacity-70 bg-orange-500 my-4 rounded-lg"></div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center border border-[#1F223C]">
+                                        <svg width="20px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #64748b;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M116.738,231.551c0,23.245,14.15,43.315,34.513,49.107c15.262,42.368,55.574,70.776,100.582,70.776 s85.32-28.408,100.58-70.776c20.365-5.792,34.515-25.854,34.515-49.107c0-15.691-6.734-30.652-18.061-40.248l1.661-8.921 c0-3.323-0.229-6.568-0.491-9.821l-0.212-2.593l-2.213,1.374c-30.871,19.146-80.885,27.71-116.754,27.71 c-34.85,0-83.895-8.214-114.902-26.568l-2.259-0.59l-0.188,2.554c-0.192,2.632-0.384,5.256-0.357,8.23l1.632,8.649 C123.466,200.923,116.738,215.876,116.738,231.551z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M356.151,381.077c-9.635-5.97-18.734-11.607-26.102-17.43l-0.937-0.738l-0.972,0.691 c-6.887,4.914-31.204,30.17-51.023,51.172l-10.945-21.273l5.697-4.076v-20.854h-40.07v20.854l5.697,4.076l-10.949,21.281 c-19.825-21.009-44.154-46.265-51.034-51.18l-0.973-0.691l-0.937,0.738c-7.368,5.823-16.469,11.46-26.102,17.43 c-30.029,18.61-64.062,39.697-64.062,77.344c0,22.244,52.241,53.579,168.388,53.579c116.146,0,168.388-31.335,168.388-53.579 C420.213,420.774,386.178,399.687,356.151,381.077z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M131.67,131.824c0,18.649,56.118,42.306,119.188,42.306s119.188-23.656,119.188-42.306v-25.706l43.503-17.702 v55.962c-5.068,0.792-8.964,5.186-8.964,10.45c0,4.503,2.966,8.432,7.242,9.852l-8.653,57.111h40.704l-8.651-57.111 c4.27-1.421,7.232-5.35,7.232-9.852c0-5.295-3.919-9.697-9.014-10.466l-0.21-67.197c0.357-0.621,0.357-1.266,0.357-1.607 c0-0.342,0-0.978-0.149-0.978h-0.002c-0.262-2.446-2.011-4.612-4.56-5.652l-11.526-4.72L267.551,3.238 C262.361,1.118,256.59,0,250.858,0s-11.502,1.118-16.69,3.238L72.834,68.936c-2.863,1.172-4.713,3.773-4.713,6.622 c0,2.842,1.848,5.443,4.716,6.63l58.833,23.928V131.824z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col ml-2 gap-1">
+                                        <span class="text-xs text-slate-400">Mohammad Karim "Afghan"</span>
+                                        <span class="flex gap-1">
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-[#12172A] py-4 px-5 rounded-md">
+                                <p class="text-white text-center font-thin text-sm">
+                                    “I started learning programming w/ Mosh 4 years ago with his C# courses. Thanks to
+                                    those I landed my first job. Then, I continued to learn from his materials and made
+                                    the jump from junior to senior Software Engineer (my salary went 10x from my first
+                                    job). Now, 4 years later I continue to learn with his excellent courses.”
+                                </p>
+                                <div class="w-2/5 h-1 opacity-70 bg-orange-500 my-4 rounded-lg"></div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center border border-[#1F223C]">
+                                        <svg width="20px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #64748b;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M116.738,231.551c0,23.245,14.15,43.315,34.513,49.107c15.262,42.368,55.574,70.776,100.582,70.776 s85.32-28.408,100.58-70.776c20.365-5.792,34.515-25.854,34.515-49.107c0-15.691-6.734-30.652-18.061-40.248l1.661-8.921 c0-3.323-0.229-6.568-0.491-9.821l-0.212-2.593l-2.213,1.374c-30.871,19.146-80.885,27.71-116.754,27.71 c-34.85,0-83.895-8.214-114.902-26.568l-2.259-0.59l-0.188,2.554c-0.192,2.632-0.384,5.256-0.357,8.23l1.632,8.649 C123.466,200.923,116.738,215.876,116.738,231.551z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M356.151,381.077c-9.635-5.97-18.734-11.607-26.102-17.43l-0.937-0.738l-0.972,0.691 c-6.887,4.914-31.204,30.17-51.023,51.172l-10.945-21.273l5.697-4.076v-20.854h-40.07v20.854l5.697,4.076l-10.949,21.281 c-19.825-21.009-44.154-46.265-51.034-51.18l-0.973-0.691l-0.937,0.738c-7.368,5.823-16.469,11.46-26.102,17.43 c-30.029,18.61-64.062,39.697-64.062,77.344c0,22.244,52.241,53.579,168.388,53.579c116.146,0,168.388-31.335,168.388-53.579 C420.213,420.774,386.178,399.687,356.151,381.077z">
+                                                    </path>
+                                                    <path class="st0"
+                                                        d="M131.67,131.824c0,18.649,56.118,42.306,119.188,42.306s119.188-23.656,119.188-42.306v-25.706l43.503-17.702 v55.962c-5.068,0.792-8.964,5.186-8.964,10.45c0,4.503,2.966,8.432,7.242,9.852l-8.653,57.111h40.704l-8.651-57.111 c4.27-1.421,7.232-5.35,7.232-9.852c0-5.295-3.919-9.697-9.014-10.466l-0.21-67.197c0.357-0.621,0.357-1.266,0.357-1.607 c0-0.342,0-0.978-0.149-0.978h-0.002c-0.262-2.446-2.011-4.612-4.56-5.652l-11.526-4.72L267.551,3.238 C262.361,1.118,256.59,0,250.858,0s-11.502,1.118-16.69,3.238L72.834,68.936c-2.863,1.172-4.713,3.773-4.713,6.622 c0,2.842,1.848,5.443,4.716,6.63l58.833,23.928V131.824z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col ml-2 gap-1">
+                                        <span class="text-xs text-slate-400">Mohammad Karim "Afghan"</span>
+                                        <span class="flex gap-1">
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg width="12px" viewBox="0 0 47.94 47.94" xml:space="preserve"
+                                                fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path style="fill:#ED8A19;"
+                                                        d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----footer-->
+    <footer class="w-full border-t border-[#1F223C] mt-20">
+        <div
+            class="container mx-auto px-4 text-white flex flex-col sm:flex-row items-center justify-between min-h-24 py-3 sm:py-0 relative overflow-hidden">
+            <div
+                class="w-28 h-28 md:w-40 md:h-40 rounded-full bg-orange-500 absolute blur-[100px] opacity-70 left-[42%] -top-16 md:-top-36">
+            </div>
+            <div>
+                <p class="text-xs font-thin">Copyrights bemLearn &copy</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#">
+                    <svg width="16.002" height="16.002" viewBox="0 0 16.002 16.002">
+                        <path id="Path_63" data-name="Path 63"
+                            d="M16,8.049A8,8,0,1,0,6.748,16V10.376H4.718V8.05H6.75V6.275A2.832,2.832,0,0,1,9.772,3.144a12.237,12.237,0,0,1,1.791.157v1.98H10.554a1.16,1.16,0,0,0-1.3,1.258v1.51h2.218l-.354,2.326H9.25V16A8.037,8.037,0,0,0,16,8.049Z"
+                            transform="translate(0.002 0.001)" fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_64" data-name="Path 64"
+                            d="M0,1.146A1.161,1.161,0,0,1,1.175,0h13.65A1.161,1.161,0,0,1,16,1.146V14.854A1.161,1.161,0,0,1,14.825,16H1.175A1.161,1.161,0,0,1,0,14.854ZM4.943,13.394V6.169h-2.4v7.225Zm-1.2-8.212a1.252,1.252,0,1,0,.016-2.5,1.251,1.251,0,1,0-.032,2.5Zm4.908,8.212V9.359a1.63,1.63,0,0,1,.08-.586,1.313,1.313,0,0,1,1.232-.878c.869,0,1.216.662,1.216,1.634v3.865h2.4V9.25C13.58,7.03,12.4,6,10.816,6A2.386,2.386,0,0,0,8.651,7.191v.025H8.635l.016-.025V6.169h-2.4c.03.678,0,7.225,0,7.225Z"
+                            fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_65" data-name="Path 65"
+                            d="M8,0C5.829,0,5.556.01,4.7.048A5.9,5.9,0,0,0,2.76.42a3.917,3.917,0,0,0-1.417.923A3.927,3.927,0,0,0,.42,2.76,5.86,5.86,0,0,0,.048,4.7C.01,5.555,0,5.827,0,8s.01,2.444.048,3.3A5.894,5.894,0,0,0,.42,13.24a4.1,4.1,0,0,0,2.339,2.34,5.873,5.873,0,0,0,1.942.372C5.555,15.99,5.827,16,8,16s2.444-.01,3.3-.048a5.906,5.906,0,0,0,1.943-.372,4.1,4.1,0,0,0,2.339-2.34,5.92,5.92,0,0,0,.372-1.942C15.99,10.445,16,10.173,16,8s-.01-2.445-.048-3.3A5.913,5.913,0,0,0,15.58,2.76a3.926,3.926,0,0,0-.923-1.417A3.911,3.911,0,0,0,13.24.42,5.885,5.885,0,0,0,11.3.048C10.443.01,10.172,0,8,0H8ZM7.283,1.442H8c2.136,0,2.389.007,3.232.046a4.433,4.433,0,0,1,1.486.275,2.482,2.482,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.394,4.394,0,0,1,.275,1.485c.039.843.047,1.1.047,3.231s-.008,2.389-.047,3.232a4.426,4.426,0,0,1-.275,1.485,2.652,2.652,0,0,1-1.519,1.517,4.4,4.4,0,0,1-1.485.276c-.843.038-1.1.047-3.232.047s-2.39-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.478,2.478,0,0,1-.92-.6,2.48,2.48,0,0,1-.6-.92,4.42,4.42,0,0,1-.275-1.485c-.038-.843-.046-1.1-.046-3.233s.008-2.388.046-3.231a4.426,4.426,0,0,1,.276-1.486,2.482,2.482,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.738-.034,1.024-.044,2.515-.045v0ZM12.271,2.77a.96.96,0,1,0,.96.96.96.96,0,0,0-.96-.96ZM8,3.892A4.109,4.109,0,1,0,12.11,8,4.108,4.108,0,0,0,8,3.892ZM8,5.333A2.667,2.667,0,1,1,5.334,8,2.667,2.667,0,0,1,8,5.333Z"
+                            fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                        <path id="Path_66" data-name="Path 66"
+                            d="M9,0h1.98a6.3,6.3,0,0,0,1.235,2.512A3.449,3.449,0,0,0,15,4V6a5.319,5.319,0,0,1-4-1.829V11A5,5,0,1,1,6,6V8a3,3,0,1,0,3,3Z"
+                            transform="translate(-1)" fill="#fff" stroke="#000" stroke-width="0" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="text-xs font-thin">
+                <a href="#" class="mr-3">Privacy policy</a>
+                <a href="#">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/share.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 4000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+
+            },
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with bemLearn</title>
+    <link rel="stylesheet" href="../style/app.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon-min.png">
+    <link rel="stylesheet" href="../style/izitoast.css">
+
+</head>
+
+<body class="bg-[#0D1224] flex items-center justify-center h-lvh">
+        <div class="px-4 w-full sm:w-[400px]  min-h-18">
+            <div class="w-full flex justify-center mb-6">
+                <a href="../index.html"><img src="../images/logo.png" alt="bemlearn logo" class="w-44" /></a> 
+            </div>
+            <div class="h-full w-full border border-[#1F223C] bg-[#12172A] px-4 py-3 rounded-lg">
+                <h4 class="text-center font-bold text-2xl mt-3 text-white ">Login</h4>
+                <div class="w-full h-14 mt-6 relative">
+                    <input id="username" type="text" placeholder="Enter your email address" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-thin focus:border-slate-700 " autocomplete="off" />
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600">
+                        <svg width="20px" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle> <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    </span>
+                </div>
+                <span id="username-error" class="hidden font-thin text-xs text-red-500 my-1.5 flex items-center gap-1">
+                    <svg width="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                     <span id="error-msg"></span>
+                </span>
+                
+
+                <div class="w-full h-14 mt-2 relative">
+                    <input id="password" type="password" placeholder="Enter your password" class="h-full w-full bg-[#0D1224] border border-[#1F223C] rounded-lg px-3 focus:outline-none  placeholder:font-thin placeholder:text-sm placeholder:text-slate-500 text-white text-base font-black focus:border-slate-700 " autocomplete="off" />
+                    <span class="flex absolute top-px h-[95%] right-0.5 w-8 rounded-lg justify-center bg-[#0D1224] text-slate-600 hover:cursor-pointer">
+                        <svg id="hide-pass" class="hidden" width="20px" viewBox="0 0 24 24" fill="none"><g  stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1 12C1 12 5 20 12 20C19 20 23 12 23 12" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7280000000000002" stroke-linecap="round" stroke-linejoin="round"></circle> </g></svg>
+                        <svg id="show-pass" width="20px" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 14.8335C21.3082 13.3317 22 12 22 12C22 12 18.3636 5 12 5C11.6588 5 11.3254 5.02013 11 5.05822C10.6578 5.09828 10.3244 5.15822 10 5.23552M12 9C12.3506 9 12.6872 9.06015 13 9.17071C13.8524 9.47199 14.528 10.1476 14.8293 11C14.9398 11.3128 15 11.6494 15 12M3 3L21 21M12 15C11.6494 15 11.3128 14.9398 11 14.8293C10.1476 14.528 9.47198 13.8524 9.1707 13C9.11386 12.8392 9.07034 12.6721 9.04147 12.5M4.14701 9C3.83877 9.34451 3.56234 9.68241 3.31864 10C2.45286 11.1282 2 12 2 12C2 12 5.63636 19 12 19C12.3412 19 12.6746 18.9799 13 18.9418" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    
+                    </span>
+                </div><span id="pass-error" class="hidden font-thin text-xs text-red-500 mt-1.5 flex items-center gap-1">
+                    <svg width="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    <span id="pass-error-msg"></span>
+                </span>
+                <div class="text-slate-500 font-thin flex gap-1 py-1 text-sm ml-1  mt-1 mb-4">Forgot your password ?<a href="#" class="text-sky-500 font-thin"> Click here</a></div>
+            
+                <button id="login" class="w-full h-11 bg-orange-600 text-white text-lg flex items-center justify-center rounded-lg font-thin mb-3">
+                    <img class="hidden" id="loading-gif" src="../images/Infinity@1x-1.0s-200px-200px.svg" width="40">
+                    <span id="login-text">Login</span>
+                </button>
+                <div class="text-slate-500 font-thin flext text-center py-1">Don't have account? <a href="#" class="text-orange-500 font-medium"> Register</a></div>
+            </div>
+        </div>
+    <script src="../js/izitoast.js"></script>
+    <script src="./js/login.js" type="module"></script>
+</body>
+
+</html>
