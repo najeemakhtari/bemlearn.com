@@ -77,7 +77,7 @@ let passwordFlag = false;
                         
                     });
                     setTimeout(() => {
-                            location.href= '../admin/'
+                            location.href= '../affiliate-marketer/'
                     }, 3000);
                 }else{
                     iziToast.error({
